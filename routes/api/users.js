@@ -106,7 +106,7 @@ router.post('/login', (req, res) => {
            jwt.sign(
              payload,
              keys.secretOrkey,
-             { expiresIn: 25200 },
+             { expiresIn: 2520 },
              (err, token) => {
                if (err) {
                  console.log(err)
